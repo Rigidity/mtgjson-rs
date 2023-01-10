@@ -1,5 +1,8 @@
 # MTGJSON (Rust)
 
+[![Crate](https://img.shields.io/crates/v/mtgjson)](https://crates.io/crates/mtgjson)
+[![Docs](https://img.shields.io/docsrs/mtgjson)](https://docs.rs/mtgjson)
+
 Unofficially provided lightweight models of the data provided by MTGJSON.
 
 ## License
