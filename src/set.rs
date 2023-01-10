@@ -15,7 +15,7 @@ use crate::{
 #[serde(rename_all = "camelCase")]
 pub struct Set {
     /// The number of cards in the set. This will default
-    /// to totalSetSize if not available. Wizards of the Coast
+    /// to `total_set_size` if not available. Wizards of the Coast
     /// sometimes prints extra cards beyond the set size into
     /// promos or supplemental products.
     pub base_set_size: usize,

@@ -55,23 +55,23 @@ pub struct AtomicCard {
     /// The related parts of the card.
     pub card_parts: Option<Vec<String>>,
 
-    /// A list of all the colors found in mana_cost, color_indicator, and text.
+    /// A list of all the colors found in `mana_cost`, `color_indicator`, and `text`.
     pub color_identity: Vec<Color>,
 
     /// A list of all the colors in the color indicator (The symbol prefixed to a card's types).
     pub color_indicator: Option<Vec<Color>>,
 
-    /// A list of all the colors in mana_cost and color_indicator. Some cards may not have values, such as cards with "Devoid" in its text.
+    /// A list of all the colors in `mana_cost` and `color_indicator`. Some cards may not have values, such as cards with "Devoid" in its text.
     pub colors: Vec<Color>,
 
-    /// The converted mana cost of the card. Use the mana_value property.
+    /// The converted mana cost of the card. Use the `mana_value` property.
     #[deprecated]
     pub converted_mana_cost: f32,
 
     /// The card rank on EDHRec.
     pub edhrec_rank: Option<u32>,
 
-    /// The converted mana cost or mana value for the face for either half or part of the card. Use the face_mana_value property.
+    /// The converted mana cost or mana value for the face for either half or part of the card. Use the `face_mana_value` property.
     #[deprecated]
     pub face_converted_mana_cost: Option<f32>,
 
@@ -187,13 +187,13 @@ pub struct SetCard {
     /// The related parts of the card.
     pub card_parts: Option<Vec<String>>,
 
-    /// A list of all the colors found in mana_cost, color_indicator, and text.
+    /// A list of all the colors found in `mana_cost`, `color_indicator`, and `text`.
     pub color_identity: Vec<Color>,
 
     /// A list of all the colors in the color indicator (The symbol prefixed to a card's types).
     pub color_indicator: Option<Vec<Color>>,
 
-    /// A list of all the colors in mana_cost and color_indicator. Some cards may not have values, such as cards with "Devoid" in its text.
+    /// A list of all the colors in `mana_cost` and `color_indicator`. Some cards may not have values, such as cards with "Devoid" in its text.
     pub colors: Vec<Color>,
 
     /// The converted mana cost of the card. Use the mana_value property.
@@ -206,7 +206,7 @@ pub struct SetCard {
     /// The card rank on EDHRec.
     pub edhrec_rank: Option<u32>,
 
-    /// The converted mana cost or mana value for the face for either half or part of the card. Use the face_mana_value property.
+    /// The converted mana cost or mana value for the face for either half or part of the card. Use the `face_mana_value` property.
     #[deprecated]
     pub face_converted_mana_cost: Option<f32>,
 
@@ -222,7 +222,7 @@ pub struct SetCard {
     /// The finishes of the card.
     pub finishes: Vec<Finish>,
 
-    /// The promotional card name printed above the true card name on special cards that has no game function. See this card for an example.
+    /// The promotional card name printed above the true card name on special cards that has no game function.
     pub flavor_name: Option<String>,
 
     /// The italicized text found below the rules text that has no game function.
@@ -243,7 +243,7 @@ pub struct SetCard {
     /// If the card allows a value other than 4 copies in a deck.
     pub has_alternative_deck_limit: Option<bool>,
 
-    /// If the card marked by Wizards of the Coast for having sensitive content. Cards with this property may have missing or degraded properties and values. See this official article for more information.
+    /// If the card marked by Wizards of the Coast for having sensitive content. Cards with this property may have missing or degraded properties and values.
     pub has_content_warning: Option<bool>,
 
     /// If the card can be found in foil. Use the finishes property.
@@ -293,7 +293,7 @@ pub struct SetCard {
     /// If the card does not have a text box.
     pub is_textless: Option<bool>,
 
-    /// If the card is "timeshifted", a feature of certain sets where a card will have a different frameVersion.
+    /// If the card is "timeshifted", a feature of certain sets where a card will have a different `frame_version`.
     pub is_timeshifted: Option<bool>,
 
     /// A list of keywords found on the card.
@@ -439,13 +439,13 @@ pub struct TokenCard {
     /// The related parts of the card.
     pub card_parts: Option<Vec<String>>,
 
-    /// A list of all the colors found in mana_cost, color_indicator, and text.
+    /// A list of all the colors found in `mana_cost`, `color_indicator`, and `text`.
     pub color_identity: Vec<Color>,
 
     /// A list of all the colors in the color indicator (The symbol prefixed to a card's types).
     pub color_indicator: Option<Vec<Color>>,
 
-    /// A list of all the colors in mana_cost and color_indicator. Some cards may not have values, such as cards with "Devoid" in its text.
+    /// A list of all the colors in `mana_cost` and `color_indicator`. Some cards may not have values, such as cards with "Devoid" in its text.
     pub colors: Vec<Color>,
 
     /// The flavor name on the face of the card.
