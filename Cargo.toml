@@ -1,5 +1,12 @@
 [package]
 name = "mtgjson"
+authors = ["Rigidity <me@rigidnetwork.com>"]
+license = "MIT OR Apache-2.0"
+keywords = ["mtg", "magic", "mtgjson", "serde", "data"]
+categories = ["data-structures"]
+description = "Unofficially provided lightweight models of the data provided by MTGJSON."
+homepage = "https://github.com/Rigidity/mtgjson-rs"
+repository = "https://github.com/Rigidity/mtgjson-rs"
 version = "0.1.0"
 edition = "2021"
 
