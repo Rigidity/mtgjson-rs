@@ -14,3 +14,17 @@ pub struct AllPrintings {
     /// Sets grouped by name.
     pub data: HashMap<String, Set>,
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_all_printings() {
+        let _: AllPrintings =
+            reqwest::blocking::get("https://mtgjson.com/api/v5/AllPrintings.json")
+                .unwrap()
+                .json()
+                .unwrap();
+    }
+}

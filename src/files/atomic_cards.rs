@@ -14,3 +14,16 @@ pub struct AtomicCards {
     /// Cards grouped by name.
     pub data: HashMap<String, Vec<AtomicCard>>,
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_atomic_cards() {
+        let _: AtomicCards = reqwest::blocking::get("https://mtgjson.com/api/v5/AtomicCards.json")
+            .unwrap()
+            .json()
+            .unwrap();
+    }
+}

@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "lowercase")]
 #[allow(missing_docs)]
 pub enum PromoType {
+    Alchemy,
     ArenaLeague,
     BoosterFun,
     BoxTopper,
@@ -12,6 +13,8 @@ pub enum PromoType {
     BringAFriend,
     Bundle,
     BuyABox,
+    CommanderParty,
+    Concept,
     Convention,
     DateStamped,
     DraculaSeries,
@@ -33,6 +36,7 @@ pub enum PromoType {
     League,
     MediaInsert,
     NeonInk,
+    OilSlick,
     OpenHouse,
     PlaneswalkerStamped,
     PlayerRewards,
@@ -40,10 +44,13 @@ pub enum PromoType {
     PremiereShop,
     Prerelease,
     PromoPack,
+    Rebalanced,
     Release,
     SChineseAltArt,
+    SetExtension,
     SetPromo,
     Stamped,
+    StepAndCompleat,
     SurgeFoil,
     Textured,
     ThemePack,
